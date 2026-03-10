@@ -1,0 +1,1078 @@
+<!DOCTYPE html>
+<html lang="fr" class="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ADAMIA | Création de site web à Montélimar</title>
+  <meta name="description"
+    content="ADAMIA est une agence web moderne à Montélimar. Nous créons des sites web à haute conversion pour les entreprises locales." />
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Space+Grotesk:wght@700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <!-- Animated Background Elements -->
+  <div id="background-glows">
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+    <div class="glow-orb orb-3"></div>
+  </div>
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container nav-container pill-nav glass">
+      <a href="#" class="logo">ADAMIA<span>.</span></a>
+
+      <nav class="nav-links">
+        <a href="#services">Services</a>
+        <a href="#process">Processus</a>
+        <a href="#portfolio">Réalisations</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <a href="https://calendly.com/devbyadamas/30min" target="_blank" class="btn btn-primary btn-sm">Démarrer mon
+        projet</a>
+
+      <button class="mobile-menu-btn" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="app">
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="hero-bg ambient-glow"></div>
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="badge glass">Agence Web à Montélimar</div>
+          <h1 class="hero-title">
+            Des sites web qui <span class="text-gradient-accent">convertissent</span> vos visiteurs en clients.
+          </h1>
+          <p class="hero-subtitle">
+            ADAMIA est l'agence digitale des entreprises locales visionnaires. Nous créons des expériences premium,
+            rapides et optimisées pour générer des résultats concrets.
+          </p>
+          <div class="hero-actions">
+            <a href="https://calendly.com/devbyadamas/30min" target="_blank" class="btn btn-primary">Démarrer mon
+              projet</a>
+            <a href="#portfolio" class="btn btn-outline">Voir nos réalisations</a>
+          </div>
+
+          <div class="hero-metrics">
+            <div class="metric">
+              <span class="metric-value">100%</span>
+              <span class="metric-label">Sur-mesure</span>
+            </div>
+            <div class="metric">
+              <span class="metric-value">SEO</span>
+              <span class="metric-label">Optimisé</span>
+            </div>
+            <div class="metric">
+              <span class="metric-value">24h</span>
+              <span class="metric-label">Devis rapide</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="mockup-frame glass">
+            <div class="mockup-header">
+              <div class="mac-buttons">
+                <span></span><span></span><span></span>
+              </div>
+            </div>
+            <div class="mockup-body">
+              <img
+                src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                alt="Dashboard Analytics" />
+            </div>
+          </div>
+          <div class="floating-card glass card-1 reveal">
+            <div class="card-icon text-accent">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+              </svg>
+            </div>
+            <div class="card-text">
+              <strong>Performance</strong>
+              <span>Score Google 99/100</span>
+            </div>
+          </div>
+          <div class="floating-card glass card-2 reveal reveal-delay-2">
+            <div class="card-icon text-accent">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                <polyline points="17 6 23 6 23 12"></polyline>
+              </svg>
+            </div>
+            <div class="card-text">
+              <strong>Croissance</strong>
+              <span>+150% de leads</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Social Proof Section -->
+    <section class="social-proof section">
+      <div class="container">
+        <p class="social-proof-title">Ils nous font confiance pour leur croissance digitale</p>
+        <div class="logo-carousel">
+          <div class="logo-track">
+            <!-- Original set -->
+            <div class="logo-item">La Torréfaction du Château</div>
+            <div class="logo-item">Selectum</div>
+            <div class="logo-item">Nexus</div>
+            <div class="logo-item">Drôme immo</div>
+            <div class="logo-item">ARCHIFRANCE</div>
+            <!-- Duplicated set for seamless loop -->
+            <div class="logo-item">La Torréfaction du Château</div>
+            <div class="logo-item">Selectum</div>
+            <div class="logo-item">Nexus</div>
+            <div class="logo-item">Drôme immo</div>
+            <div class="logo-item">ARCHIFRANCE</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Problem / Solution Section -->
+    <section class="problem-solution section" id="about">
+      <div class="container container-split">
+        <div class="problem-box glass">
+          <h3>Les problèmes courants</h3>
+          <ul class="pain-points">
+            <li><svg class="text-muted" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="1.5">
+                <path d="M18 6L6 18M6 6l12 12"></path>
+              </svg> Design dépassé qui fait fuir vos clients potentiels</li>
+            <li><svg class="text-muted" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="1.5">
+                <path d="M18 6L6 18M6 6l12 12"></path>
+              </svg> Invisible sur Google (Mauvais référencement local)</li>
+            <li><svg class="text-muted" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="1.5">
+                <path d="M18 6L6 18M6 6l12 12"></path>
+              </svg> Trafic qui ne convertit pas (Aucune demande de devis)</li>
+          </ul>
+        </div>
+        <div class="solution-box glass">
+          <h3>La solution <span class="text-accent">ADAMIA</span></h3>
+          <ul class="benefits">
+            <li><svg class="text-accent" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="1.5">
+                <path d="M20 6L9 17l-5-5"></path>
+              </svg> Identité visuelle premium & mémorable pour votre marque</li>
+            <li><svg class="text-accent" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="1.5">
+                <path d="M20 6L9 17l-5-5"></path>
+              </svg> Optimisation SEO ultra ciblée sur votre zone d'intervention</li>
+            <li><svg class="text-accent" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="1.5">
+                <path d="M20 6L9 17l-5-5"></path>
+              </svg> Stratégie orientée conversion (Design UX persuasif)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pourquoi Adamia Section (Comparative Table) -->
+    <section class="comparison section" id="why-us">
+      <div class="container container-sm">
+        <div class="section-header">
+          <h2>Pourquoi choisir <span class="text-accent">Adamia ?</span></h2>
+          <p>La différence entre une agence traditionnelle et notre approche orientée performance.</p>
+        </div>
+
+        <div class="comparative-table-container">
+          <!-- Table Header -->
+          <div class="comparative-header">
+            <div class="col-category"></div>
+            <div class="col-traditional">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FF4444" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+              </svg>
+              <span>Les agences classiques</span>
+            </div>
+            <div class="col-adamia">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#00C48C" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 6L9 17l-5-5"></path>
+              </svg>
+              <span>Adamia</span>
+            </div>
+          </div>
+
+          <!-- Rows -->
+          <div class="comparative-body">
+            <div class="comparative-row reveal">
+              <div class="col-category">Objectif</div>
+              <div class="col-traditional">Site internet vitrine</div>
+              <div class="col-adamia">Générateur de revenus</div>
+            </div>
+            <div class="comparative-row alt-bg reveal reveal-delay-1">
+              <div class="col-category">Processus</div>
+              <div class="col-traditional">Générique et passif</div>
+              <div class="col-adamia">Agile et orienté ROI</div>
+            </div>
+            <div class="comparative-row reveal reveal-delay-2">
+              <div class="col-category">Copywriting</div>
+              <div class="col-traditional">À vous de l'écrire</div>
+              <div class="col-adamia">Rédigé pour persuader</div>
+            </div>
+            <div class="comparative-row alt-bg reveal reveal-delay-3">
+              <div class="col-category">Design</div>
+              <div class="col-traditional">Thème pré-fait (Template)</div>
+              <div class="col-adamia">Identité premium 100% sur-mesure</div>
+            </div>
+            <div class="comparative-row reveal reveal-delay-1">
+              <div class="col-category">Intégration</div>
+              <div class="col-traditional">CMS lourd et lent</div>
+              <div class="col-adamia">Technologies modernes ultra-rapides</div>
+            </div>
+            <div class="comparative-row alt-bg reveal reveal-delay-2">
+              <div class="col-category">Délais</div>
+              <div class="col-traditional">De 2 à 6 mois</div>
+              <div class="col-adamia">De 3 à 5 semaines</div>
+            </div>
+            <div class="comparative-row reveal reveal-delay-3">
+              <div class="col-category">Suivi client</div>
+              <div class="col-traditional">Absent après livraison</div>
+              <div class="col-adamia">Accompagnement continu</div>
+            </div>
+            <div class="comparative-row alt-bg reveal reveal-delay-1">
+              <div class="col-category">Propriété du site</div>
+              <div class="col-traditional">Verrouillée ou abonnement à vie</div>
+              <div class="col-adamia">100% à vous</div>
+            </div>
+            <div class="comparative-row reveal reveal-delay-2">
+              <div class="col-category">Vision</div>
+              <div class="col-traditional">Simple exécutant</div>
+              <div class="col-adamia">Partenaire de croissance</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services section" id="services">
+      <div class="container">
+        <div class="section-header">
+          <h2>Nos expertises</h2>
+          <p>Tout ce dont vous avez besoin pour dominer votre marché local.</p>
+        </div>
+        <div class="services-grid">
+          <div class="service-card reveal">
+            <span class="service-number">01</span>
+            <div class="service-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+            </div>
+            <h3>Création de site web</h3>
+            <p>Des sites vitrines sur-mesure, performants et pensés pour l'expérience utilisateur et la conversion.</p>
+          </div>
+          <div class="service-card reveal reveal-delay-1">
+            <span class="service-number">02</span>
+            <div class="service-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <path d="M16 10a4 4 0 0 1-8 0"></path>
+              </svg>
+            </div>
+            <h3>Création de site e-commerce</h3>
+            <p>Boutiques en ligne optimisées pour vendre plus, 24h/24 et 7j/7 avec un parcours client fluide.</p>
+          </div>
+          <div class="service-card reveal reveal-delay-2">
+            <span class="service-number">03</span>
+            <div class="service-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+            </div>
+            <h3>SEO Local</h3>
+            <p>Soyez le premier résultat sur Google quand vos clients cherchent vos services dans votre ville.</p>
+          </div>
+          <div class="service-card reveal reveal-delay-3">
+            <span class="service-number">04</span>
+            <div class="service-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <circle cx="12" cy="12" r="6"></circle>
+                <circle cx="12" cy="12" r="2"></circle>
+              </svg>
+            </div>
+            <h3>Optimisation de conversion</h3>
+            <p>Nous auditons et améliorons l'UX/UI de votre site existant pour démultiplier vos leads.</p>
+          </div>
+          <div class="service-card reveal reveal-delay-4">
+            <span class="service-number">05</span>
+            <div class="service-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="3"></circle>
+                <path
+                  d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z">
+                </path>
+              </svg>
+            </div>
+            <h3>Automatisation digitale</h3>
+            <p>Gagnez du temps en automatisant vos devis, factures, et la gestion de vos prospects.</p>
+          </div>
+          <div class="service-card reveal reveal-delay-5">
+            <span class="service-number">06</span>
+            <div class="service-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z">
+                </path>
+              </svg>
+            </div>
+            <h3>Maintenance & Support</h3>
+            <p>Votre site reste rapide, sécurisé et à jour. Nous intervenons rapidement à chaque besoin.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process section" id="process">
+      <div class="container">
+        <div class="section-header">
+          <h2>Notre méthode de travail</h2>
+          <p>Un processus transparent et efficace en 4 étapes pour un lancement réussi.</p>
+        </div>
+        <div class="timeline" id="timeline-container">
+          <div class="timeline-progress-line"></div>
+          <div class="timeline-step">
+            <div class="step-header">
+              <div class="step-number glass">1</div>
+              <img src="https://upload.wikimedia.org/wikipedia/commons/9/9b/Google_Meet_icon_%282020%29.svg"
+                class="step-logo" alt="Google Meet">
+            </div>
+            <h4>Stratégie</h4>
+            <p>Analyse de votre marché, de vos concurrents et définition de vos objectifs de conversion.</p>
+          </div>
+          <div class="timeline-step">
+            <div class="step-header">
+              <div class="step-number glass">2</div>
+              <img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg" class="step-logo"
+                alt="Figma">
+            </div>
+            <h4>Design</h4>
+            <p>Création de maquettes UI/UX sur-mesure à l'image de votre marque.</p>
+          </div>
+          <div class="timeline-step">
+            <div class="step-header">
+              <div class="step-number glass">3</div>
+              <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" class="step-logo"
+                alt="Antigravity (Google)">
+            </div>
+            <h4>Développement</h4>
+            <p>Intégration pixel-perfect avec des technologies web ultra-rapides et SEO-friendly.</p>
+          </div>
+          <div class="timeline-step">
+            <div class="step-header">
+              <div class="step-number glass">4</div>
+              <img src="https://assets.vercel.com/image/upload/v1588805858/repositories/vercel/logo.png"
+                class="step-logo" alt="Vercel">
+            </div>
+            <h4>Mise en ligne</h4>
+            <p>Tests complets, lancement officiel et formation à la gestion de votre nouveau site.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Portfolio Section -->
+    <section class="portfolio section" id="portfolio">
+      <div class="container">
+        <div class="section-header">
+          <h2>Nos dernières réalisations</h2>
+          <p>Découvrez comment nous aidons les entreprises de Montélimar à briller sur le web.</p>
+        </div>
+        <div class="portfolio-grid">
+          <div class="portfolio-item glass reveal">
+            <div class="portfolio-img">
+              <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=800&q=80"
+                alt="Site Restaurant La Torréfaction" />
+            </div>
+            <div class="portfolio-content">
+              <span class="portfolio-category">CAFÉ ARTISANAL — MONTÉLIMAR</span>
+              <h3>La Torréfaction du Château</h3>
+              <p>Site vitrine premium avec boutique en ligne, système de réservation et SEO local optimisé.</p>
+              <a href="https://latorreefaction.com" target="_blank" class="btn btn-portfolio">Voir le site</a>
+            </div>
+          </div>
+          <div class="portfolio-item glass reveal reveal-delay-2">
+            <div class="portfolio-img">
+              <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800&q=80"
+                alt="Cabinet Archifrance" />
+            </div>
+            <div class="portfolio-content">
+              <span class="portfolio-category">CABINET D'ARCHITECTURE — DRÔME</span>
+              <h3>ARCHIFRANCE</h3>
+              <p>Refonte complète de l'image digitale. Site professionnel, rapide, pensé pour la crédibilité et la
+                génération de contacts qualifiés.</p>
+              <a href="https://archifrance.fr" target="_blank" class="btn btn-portfolio">Voir le site</a>
+            </div>
+          </div>
+          <div class="portfolio-item glass reveal reveal-delay-3">
+            <div class="portfolio-img">
+              <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80" alt="Selectum" />
+            </div>
+            <div class="portfolio-content">
+              <span class="portfolio-category">COMMERCE LOCAL — ARDÈCHE</span>
+              <h3>Selectum</h3>
+              <p>Création d'une identité digitale complète pour un commerce ardéchois. Landing page orientée conversion
+                avec SEO local intégré.</p>
+              <a href="#" class="btn btn-portfolio">Voir le site</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section section" id="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <h2>La preuve par les résultats</h2>
+          <p>Rejoignez les entreprises locales de la Drôme et de l'Ardèche qui ont transformé leur présence en ligne
+            avec Adamia.</p>
+          <div class="mt-8">
+            <a href="https://calendly.com/devbyadamas/30min" target="_blank" class="btn btn-primary">Réserver un appel
+              gratuit</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-container">
+        <!-- Row 1: Scrolling Left -->
+        <div class="carousel-track left">
+          <!-- Real 3 -->
+          <div class="testimonial-card-inf">
+            <div class="stars text-accent" style="margin-bottom: 1rem; color: #fbbf24;">★★★★★</div>
+            <p class="testimonial-quote-inf">"Le site est clair, professionnel et inspire confiance. Nous avons gagné en
+              crédibilité et en visibilité locale en quelques semaines."</p>
+            <div class="testimonial-author-inf">
+              <div class="author-avatar"
+                style="width: 50px; height: 50px; border-radius: 50%; background: #ca8a04; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-family: Playfair Display;">
+                af</div>
+              <div class="testimonial-author-info-inf">
+                <strong>Omar Assim</strong>
+                <span>Gérant, Cabinet d'architecture</span>
+              </div>
+            </div>
+            <a href="https://archifrance.fr" target="_blank" class="btn btn-outline btn-sm"
+              style="margin-top: 1.5rem; width: 100%;">Voir le site</a>
+          </div>
+          <div class="testimonial-card-inf">
+            <div class="stars text-accent" style="margin-bottom: 1rem; color: #fbbf24;">★★★★★</div>
+            <p class="testimonial-quote-inf">"La structure est simple, efficace, et surtout compréhensible pour nos
+              clients. Exactement ce qu'il nous fallait."</p>
+            <div class="testimonial-author-inf">
+              <div class="author-avatar"
+                style="width: 50px; height: 50px; border-radius: 50%; background: #92400e; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-family: Playfair Display;">
+                LT</div>
+              <div class="testimonial-author-info-inf">
+                <strong>Sabrina</strong>
+                <span>Gérante, Salon de thé</span>
+              </div>
+            </div>
+            <a href="https://latorreefaction.com" target="_blank" class="btn btn-outline btn-sm"
+              style="margin-top: 1.5rem; width: 100%;">Voir le site</a>
+          </div>
+          <div class="testimonial-card-inf">
+            <div class="stars text-accent" style="margin-bottom: 1rem; color: #fbbf24;">★★★★★</div>
+            <p class="testimonial-quote-inf">"Résultat au-delà de nos attentes. Notre visibilité sur Google a explosé
+              dès le premier mois."</p>
+            <div class="testimonial-author-inf">
+              <div class="author-avatar"
+                style="width: 50px; height: 50px; border-radius: 50%; background: #1e3a8a; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-family: Playfair Display;">
+                NB</div>
+              <div class="testimonial-author-info-inf">
+                <strong>Nicolas Bernard</strong>
+                <span>Gérant, Artisan plombier Drôme</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Duplicated 3 -->
+          <div class="testimonial-card-inf">
+            <div class="stars text-accent" style="margin-bottom: 1rem; color: #fbbf24;">★★★★★</div>
+            <p class="testimonial-quote-inf">"Le site est clair, professionnel et inspire confiance. Nous avons gagné en
+              crédibilité et en visibilité locale en quelques semaines."</p>
+            <div class="testimonial-author-inf">
+              <div class="author-avatar"
+                style="width: 50px; height: 50px; border-radius: 50%; background: #ca8a04; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-family: Playfair Display;">
+                af</div>
+              <div class="testimonial-author-info-inf">
+                <strong>Omar Assim</strong>
+                <span>Gérant, Cabinet d'architecture</span>
+              </div>
+            </div>
+            <a href="https://archifrance.fr" target="_blank" class="btn btn-outline btn-sm"
+              style="margin-top: 1.5rem; width: 100%;">Voir le site</a>
+          </div>
+          <div class="testimonial-card-inf">
+            <div class="stars text-accent" style="margin-bottom: 1rem; color: #fbbf24;">★★★★★</div>
+            <p class="testimonial-quote-inf">"La structure est simple, efficace, et surtout compréhensible pour nos
+              clients. Exactement ce qu'il nous fallait."</p>
+            <div class="testimonial-author-inf">
+              <div class="author-avatar"
+                style="width: 50px; height: 50px; border-radius: 50%; background: #92400e; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-family: Playfair Display;">
+                LT</div>
+              <div class="testimonial-author-info-inf">
+                <strong>Sabrina</strong>
+                <span>Gérante, Salon de thé</span>
+              </div>
+            </div>
+            <a href="https://latorreefaction.com" target="_blank" class="btn btn-outline btn-sm"
+              style="margin-top: 1.5rem; width: 100%;">Voir le site</a>
+          </div>
+          <div class="testimonial-card-inf">
+            <div class="stars text-accent" style="margin-bottom: 1rem; color: #fbbf24;">★★★★★</div>
+            <p class="testimonial-quote-inf">"Résultat au-delà de nos attentes. Notre visibilité sur Google a explosé
+              dès le premier mois."</p>
+            <div class="testimonial-author-inf">
+              <div class="author-avatar"
+                style="width: 50px; height: 50px; border-radius: 50%; background: #1e3a8a; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-family: Playfair Display;">
+                NB</div>
+              <div class="testimonial-author-info-inf">
+                <strong>Nicolas Bernard</strong>
+                <span>Gérant, Artisan plombier Drôme</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card-inf">
+            <div class="stars text-accent" style="margin-bottom: 1rem; color: #fbbf24;">★★★★★</div>
+            <p class="testimonial-quote-inf">"Le site est clair, professionnel et inspire confiance. Nous avons gagné en
+              crédibilité et en visibilité locale en quelques semaines."</p>
+            <div class="testimonial-author-inf">
+              <div class="author-avatar"
+                style="width: 50px; height: 50px; border-radius: 50%; background: #ca8a04; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-family: Playfair Display;">
+                af</div>
+              <div class="testimonial-author-info-inf">
+                <strong>Omar Assim</strong>
+                <span>Gérant, Cabinet d'architecture</span>
+              </div>
+            </div>
+            <a href="https://archifrance.fr" target="_blank" class="btn btn-outline btn-sm"
+              style="margin-top: 1.5rem; width: 100%;">Voir le site</a>
+          </div>
+          <div class="testimonial-card-inf">
+            <div class="stars text-accent" style="margin-bottom: 1rem; color: #fbbf24;">★★★★★</div>
+            <p class="testimonial-quote-inf">"La structure est simple, efficace, et surtout compréhensible pour nos
+              clients. Exactement ce qu'il nous fallait."</p>
+            <div class="testimonial-author-inf">
+              <div class="author-avatar"
+                style="width: 50px; height: 50px; border-radius: 50%; background: #92400e; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-family: Playfair Display;">
+                LT</div>
+              <div class="testimonial-author-info-inf">
+                <strong>Sabrina</strong>
+                <span>Gérante, Salon de thé</span>
+              </div>
+            </div>
+            <a href="https://latorreefaction.com" target="_blank" class="btn btn-outline btn-sm"
+              style="margin-top: 1.5rem; width: 100%;">Voir le site</a>
+          </div>
+
+          <!-- Duplicated 3 -->
+          <div class="testimonial-card-inf">
+            <div class="stars text-accent" style="margin-bottom: 1rem; color: #fbbf24;">★★★★★</div>
+            <p class="testimonial-quote-inf">"Résultat au-delà de nos attentes. Notre visibilité sur Google a explosé
+              dès le premier mois."</p>
+            <div class="testimonial-author-inf">
+              <div class="author-avatar"
+                style="width: 50px; height: 50px; border-radius: 50%; background: #1e3a8a; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-family: Playfair Display;">
+                NB</div>
+              <div class="testimonial-author-info-inf">
+                <strong>Nicolas Bernard</strong>
+                <span>Gérant, Artisan plombier Drôme</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card-inf">
+            <div class="stars text-accent" style="margin-bottom: 1rem; color: #fbbf24;">★★★★★</div>
+            <p class="testimonial-quote-inf">"Le site est clair, professionnel et inspire confiance. Nous avons gagné en
+              crédibilité et en visibilité locale en quelques semaines."</p>
+            <div class="testimonial-author-inf">
+              <div class="author-avatar"
+                style="width: 50px; height: 50px; border-radius: 50%; background: #ca8a04; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-family: Playfair Display;">
+                af</div>
+              <div class="testimonial-author-info-inf">
+                <strong>Omar Assim</strong>
+                <span>Gérant, Cabinet d'architecture</span>
+              </div>
+            </div>
+            <a href="https://archifrance.fr" target="_blank" class="btn btn-outline btn-sm"
+              style="margin-top: 1.5rem; width: 100%;">Voir le site</a>
+          </div>
+          <div class="testimonial-card-inf">
+            <div class="stars text-accent" style="margin-bottom: 1rem; color: #fbbf24;">★★★★★</div>
+            <p class="testimonial-quote-inf">"La structure est simple, efficace, et surtout compréhensible pour nos
+              clients. Exactement ce qu'il nous fallait."</p>
+            <div class="testimonial-author-inf">
+              <div class="author-avatar"
+                style="width: 50px; height: 50px; border-radius: 50%; background: #92400e; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-family: Playfair Display;">
+                LT</div>
+              <div class="testimonial-author-info-inf">
+                <strong>Sabrina</strong>
+                <span>Gérante, Salon de thé</span>
+              </div>
+            </div>
+            <a href="https://latorreefaction.com" target="_blank" class="btn btn-outline btn-sm"
+              style="margin-top: 1.5rem; width: 100%;">Voir le site</a>
+          </div>
+        </div>
+
+        <!-- Row 2: Scrolling Right -->
+        <div class="carousel-track right">
+          <!-- Real 3 (Start from 2 to shift them) -->
+          <div class="testimonial-card-inf">
+            <div class="stars text-accent" style="margin-bottom: 1rem; color: #fbbf24;">★★★★★</div>
+            <p class="testimonial-quote-inf">"La structure est simple, efficace, et surtout compréhensible pour nos
+              clients. Exactement ce qu'il nous fallait."</p>
+            <div class="testimonial-author-inf">
+              <div class="author-avatar"
+                style="width: 50px; height: 50px; border-radius: 50%; background: #92400e; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-family: Playfair Display;">
+                LT</div>
+              <div class="testimonial-author-info-inf">
+                <strong>Sabrina</strong>
+                <span>Gérante, Salon de thé</span>
+              </div>
+            </div>
+            <a href="https://latorreefaction.com" target="_blank" class="btn btn-outline btn-sm"
+              style="margin-top: 1.5rem; width: 100%;">Voir le site</a>
+          </div>
+          <div class="testimonial-card-inf">
+            <div class="stars text-accent" style="margin-bottom: 1rem; color: #fbbf24;">★★★★★</div>
+            <p class="testimonial-quote-inf">"Résultat au-delà de nos attentes. Notre visibilité sur Google a explosé
+              dès le premier mois."</p>
+            <div class="testimonial-author-inf">
+              <div class="author-avatar"
+                style="width: 50px; height: 50px; border-radius: 50%; background: #1e3a8a; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-family: Playfair Display;">
+                NB</div>
+              <div class="testimonial-author-info-inf">
+                <strong>Nicolas Bernard</strong>
+                <span>Gérant, Artisan plombier Drôme</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card-inf">
+            <div class="stars text-accent" style="margin-bottom: 1rem; color: #fbbf24;">★★★★★</div>
+            <p class="testimonial-quote-inf">"Le site est clair, professionnel et inspire confiance. Nous avons gagné en
+              crédibilité et en visibilité locale en quelques semaines."</p>
+            <div class="testimonial-author-inf">
+              <div class="author-avatar"
+                style="width: 50px; height: 50px; border-radius: 50%; background: #ca8a04; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-family: Playfair Display;">
+                af</div>
+              <div class="testimonial-author-info-inf">
+                <strong>Omar Assim</strong>
+                <span>Gérant, Cabinet d'architecture</span>
+              </div>
+            </div>
+            <a href="https://archifrance.fr" target="_blank" class="btn btn-outline btn-sm"
+              style="margin-top: 1.5rem; width: 100%;">Voir le site</a>
+          </div>
+
+          <!-- Duplicated 3 -->
+          <div class="testimonial-card-inf">
+            <div class="stars text-accent" style="margin-bottom: 1rem; color: #fbbf24;">★★★★★</div>
+            <p class="testimonial-quote-inf">"La structure est simple, efficace, et surtout compréhensible pour nos
+              clients. Exactement ce qu'il nous fallait."</p>
+            <div class="testimonial-author-inf">
+              <div class="author-avatar"
+                style="width: 50px; height: 50px; border-radius: 50%; background: #92400e; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-family: Playfair Display;">
+                LT</div>
+              <div class="testimonial-author-info-inf">
+                <strong>Sabrina</strong>
+                <span>Gérante, Salon de thé</span>
+              </div>
+            </div>
+            <a href="https://latorreefaction.com" target="_blank" class="btn btn-outline btn-sm"
+              style="margin-top: 1.5rem; width: 100%;">Voir le site</a>
+          </div>
+          <div class="testimonial-card-inf">
+            <div class="stars text-accent" style="margin-bottom: 1rem; color: #fbbf24;">★★★★★</div>
+            <p class="testimonial-quote-inf">"Résultat au-delà de nos attentes. Notre visibilité sur Google a explosé
+              dès le premier mois."</p>
+            <div class="testimonial-author-inf">
+              <div class="author-avatar"
+                style="width: 50px; height: 50px; border-radius: 50%; background: #1e3a8a; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-family: Playfair Display;">
+                NB</div>
+              <div class="testimonial-author-info-inf">
+                <strong>Nicolas Bernard</strong>
+                <span>Gérant, Artisan plombier Drôme</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card-inf">
+            <div class="stars text-accent" style="margin-bottom: 1rem; color: #fbbf24;">★★★★★</div>
+            <p class="testimonial-quote-inf">"Le site est clair, professionnel et inspire confiance. Nous avons gagné en
+              crédibilité et en visibilité locale en quelques semaines."</p>
+            <div class="testimonial-author-inf">
+              <div class="author-avatar"
+                style="width: 50px; height: 50px; border-radius: 50%; background: #ca8a04; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-family: Playfair Display;">
+                af</div>
+              <div class="testimonial-author-info-inf">
+                <strong>Omar Assim</strong>
+                <span>Gérant, Cabinet d'architecture</span>
+              </div>
+            </div>
+            <a href="https://archifrance.fr" target="_blank" class="btn btn-outline btn-sm"
+              style="margin-top: 1.5rem; width: 100%;">Voir le site</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing section" id="pricing">
+      <div class="container">
+        <div class="section-header">
+          <h2>Nos offres transparentes</h2>
+          <p>Des solutions adaptées à chaque stade de votre croissance digitale.</p>
+        </div>
+        <div class="pricing-grid">
+
+          <!-- Card 1: Essentiel -->
+          <div class="pricing-card glass">
+            <h3>ESSENTIEL</h3>
+            <p class="pricing-desc">Une offre simple et rapide pour lancer votre présence en ligne.</p>
+            <ul class="features">
+              <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#27c93f" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg> Design sur-mesure simple</li>
+              <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#27c93f" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg> Copywriting standard</li>
+              <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#27c93f" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg> Optimisation SEO</li>
+              <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#27c93f" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg> Responsive mobile</li>
+              <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#27c93f" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg> Suivi de projet</li>
+              <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#27c93f" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg> 2 cycles de révisions</li>
+              <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#27c93f" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg> Livré en 7-14 jours</li>
+            </ul>
+            <div style="margin-top: auto; padding-top: 2rem;">
+              <a href="https://calendly.com/devbyadamas/30min" target="_blank" class="btn btn-pricing-orange">Réserver
+                un Appel →</a>
+            </div>
+          </div>
+
+          <!-- Card 2: Performance -->
+          <div class="pricing-card pricing-card-orange">
+            <div class="popular-badge badge-white">⚡ Le plus populaire</div>
+            <h3>PERFORMANCE</h3>
+            <p class="pricing-desc" style="color: rgba(255,255,255,0.9);">L'expérience complète pour performer et
+              générer des leads qualifiés.</p>
+            <ul class="features features-white">
+              <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg> Analyse concurrentielle</li>
+              <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg> Appel stratégique offert</li>
+              <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg> Copywriting conversion-first</li>
+              <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg> Maquette Figma sur-mesure</li>
+              <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg> Full-Animations custom</li>
+              <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg> Optimisation SEO/CRO</li>
+              <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg> Responsive & Mobile first</li>
+              <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg> Installation outil d'analyse</li>
+              <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg> Révisions illimitées</li>
+              <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg> Livré en 14 jours</li>
+            </ul>
+            <div style="margin-top: auto; padding-top: 2rem;">
+              <a href="https://calendly.com/devbyadamas/30min" target="_blank" class="btn btn-pricing-white">Réserver un
+                Appel →</a>
+            </div>
+          </div>
+
+          <!-- Card 3: Mensuel -->
+          <div class="pricing-card glass">
+            <div class="popular-badge badge-orange">📅 Investissement étalé</div>
+            <h3>MENSUEL</h3>
+            <p class="pricing-desc">Tout ce qu'il faut pour performer, en étalant votre investissement.</p>
+            <ul class="features">
+              <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#27c93f" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg> Analyse concurrentielle</li>
+              <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#27c93f" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg> Appel stratégique offert</li>
+              <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#27c93f" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg> Copywriting conversion-first</li>
+              <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#27c93f" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg> Maquette Figma sur-mesure</li>
+              <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#27c93f" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg> Full-Animations custom</li>
+              <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#27c93f" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg> Optimisation SEO/CRO</li>
+              <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#27c93f" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg> Responsive & Mobile first</li>
+              <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#27c93f" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg> Installation outil d'analyse</li>
+              <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#27c93f" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg> Révisions illimitées</li>
+              <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#27c93f" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg> Livré en 14 jours</li>
+            </ul>
+            <div style="margin-top: auto; padding-top: 2rem;">
+              <a href="https://calendly.com/devbyadamas/30min" target="_blank" class="btn btn-pricing-orange">Réserver
+                un Appel →</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq section">
+      <div class="container">
+        <div class="faq-split">
+          <div class="faq-split-header">
+            <h2>Questions fréquentes</h2>
+            <p>Tout ce que vous devez savoir avant de démarrer un projet avec ADAMIA.</p>
+            <div class="mt-8">
+              <a href="https://calendly.com/devbyadamas/30min" target="_blank" class="btn btn-primary">Réserver un appel
+                gratuit</a>
+            </div>
+          </div>
+          <div class="faq-list">
+            <details class="faq-item glass" open>
+              <summary>Combien de temps prend la création d'un site web ?</summary>
+              <div class="faq-content">
+                <p>Un site vitrine standard (Starter/Business) prend environ 3 à 5 semaines de la stratégie à la mise en
+                  ligne. Un site e-commerce peut nécessiter 6 à 8 semaines selon la complexité et la taille du
+                  catalogue.</p>
+              </div>
+            </details>
+            <details class="faq-item glass">
+              <summary>Je suis déjà sur WordPress mais mon site est lent, pouvez-vous m'aider ?</summary>
+              <div class="faq-content">
+                <p>Absolument ! Nous proposons des audits de performance et des offres de refonte. Nous migrons souvent
+                  nos clients vers des solutions plus modernes (Next.js, Vite) pour garantir des temps de chargement
+                  records et un meilleur SEO.</p>
+              </div>
+            </details>
+            <details class="faq-item glass">
+              <summary>Qu'est-ce qui est inclus dans le SEO local ?</summary>
+              <div class="faq-content">
+                <p>Le SEO local comprend l'optimisation de votre fiche Google My Business, la recherche de mots-clés
+                  géolocalisés, l'optimisation technique de votre site (balises, vitesse), et la création de contenu
+                  ciblé pour votre ville (Montélimar et alentours).</p>
+              </div>
+            </details>
+            <details class="faq-item glass">
+              <summary>Y a-t-il des frais cachés ou un abonnement mensuel ?</summary>
+              <div class="faq-content">
+                <p>Non, aucun frais caché. Nos tarifs de création sont transparents (paiement en 2 ou 3 fois possible).
+                  Seuls l'hébergement et le nom de domaine sont des coûts annuels obligatoires, que nous gérons ou que
+                  vous pouvez gérer vous-même.</p>
+              </div>
+            </details>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA & Footer -->
+    <section class="final-cta section" id="contact">
+      <div class="container">
+        <div class="cta-box cta-dark">
+          <div class="cta-content">
+            <h2>Prêt à accélérer la croissance de votre entreprise ?</h2>
+            <p>Réservez un appel de découverte gratuit de 30 minutes. Nous analyserons votre présence digitale actuelle
+              et vous proposerons un plan d'action concret.</p>
+            <div class="cta-actions">
+              <a href="https://calendly.com/devbyadamas/30min" target="_blank" class="btn btn-primary">Réserver un appel
+                gratuit</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="logo">ADAMIA<span>.</span></a>
+          <p>Agence web premium à Montélimar. Création de sites internet haute performance pour les entreprises
+            ambitieuses.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#">Création site web</a></li>
+            <li><a href="#">Site e-commerce</a></li>
+            <li><a href="#">SEO Local Montélimar</a></li>
+            <li><a href="#">Optimisation conversion</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Agence</h4>
+          <ul>
+            <li><a href="#">À propos</a></li>
+            <li><a href="#portfolio">Réalisations</a></li>
+            <li><a href="#pricing">Tarifs</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <p>Montélimar, 26200, France</p>
+          <p>devbyadamas@gmail.com </p>
+          <p>06 17 60 53 14 </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 ADAMIA Web Agency. Tous droits réservés.</p>
+        <div class="legal-links">
+          <a href="#">Mentions légales</a>
+          <a href="#">Politique de confidentialité</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/33617605314" target="_blank" class="whatsapp-float" aria-label="Nous contacter sur WhatsApp">
+    <div class="whatsapp-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="28" height="28">
+        <path
+          d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+        <path
+          d="M12 0C5.373 0 0 5.373 0 12c0 2.136.564 4.14 1.534 5.874L.057 23.55a.75.75 0 0 0 .916.919l5.764-1.505A11.943 11.943 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.725 9.725 0 0 1-4.989-1.375l-.356-.214-3.722.972.993-3.62-.232-.373A9.693 9.693 0 0 1 2.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z" />
+      </svg>
+    </div>
+    <div class="whatsapp-pulse"></div>
+  </a>
+
+  <script type="module" src="/src/main.js"></script>
+  <script>
+    const canvas = document.getElementById('particles-canvas');
+    const ctx = canvas.getContext('2d');
+
+    let particlesArray;
+
+    function initCanvas() {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    }
+
+    window.addEventListener('resize', initCanvas);
+
+    class Particle {
+      constructor() {
+        this.x = Math.random() * canvas.width;
+        this.y = Math.random() * canvas.height;
+        this.size = 1.5; /* Radius 1.5px */
+        /* Very slow variable speed (0.3 max) */
+        this.velocityX = (Math.random() - 0.5) * 0.6;
+        this.velocityY = (Math.random() - 0.5) * 0.6;
+      }
+
+      update() {
+        this.x += this.velocityX;
+        this.y += this.velocityY;
+
+        // Bounce on edges
+        if (this.x < 0 || this.x > canvas.width) this.velocityX *= -1;
+        if (this.y < 0 || this.y > canvas.height) this.velocityY *= -1;
+      }
+
+      draw() {
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+        ctx.fillStyle = 'rgba(255, 255, 255, 0.7)';
+        ctx.fill();
+      }
+    }
+
+    function initParticles() {
+      particlesArray = [];
+      let numberOfParticles = 150;
+      for (let i = 0; i < numberOfParticles; i++) {
+        particlesArray.push(new Particle());
+      }
+    }
+
+    function animateParticles() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      for (let i = 0; i < particlesArray.length; i++) {
+        particlesArray[i].update();
+        particlesArray[i].draw();
+      }
+      requestAnimationFrame(animateParticles);
+    }
+
+    initCanvas();
+    initParticles();
+    animateParticles();
+  </script>
+</body>
+
+</html>
