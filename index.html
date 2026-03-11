@@ -161,8 +161,10 @@
         </div>
 
         <div class="hero-visual">
-          <video class="mockup-frame glass" src="/avis-client.mp4" autoplay loop muted playsinline
-            style="width: 100%; height: auto; object-fit: cover; border-radius: 12px;"></video>
+          <video controls playsinline poster=""
+            style="width: 100%; max-width: 300px; border-radius: 12px; display: block; margin: 0 auto;">
+            <source src="/avis-client.mp4" type="video/mp4" />
+          </video>
           <div class="floating-card glass card-1 reveal">
             <div class="card-icon text-accent">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
